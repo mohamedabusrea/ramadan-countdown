@@ -1,0 +1,21 @@
+:root {
+    --border-radius: 6px;
+    --default-padding: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container__body {
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    border-radius: var(--border-radius);
+    padding: var(--default-padding);
+}
