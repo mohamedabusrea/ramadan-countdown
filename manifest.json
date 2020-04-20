@@ -2,6 +2,9 @@
   "name": "Ramadan Countdown",
   "short_name": "Ramadan Countdown",
   "description": "This website shows the remaining time till Ramadan",
+  "start_url": "https://ramadan-countdown.netlify.app/",
+  "scope": "/",
+  "orientation": "any",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,8 +22,6 @@
       "sizes": "256x256"
     }
   ],
-  "start_url": "https://ramadan-countdown.netlify.app/",
-  "scope": "/",
   "display": "standalone",
   "theme_color": "#057767",
   "background_color": "#034949"
