@@ -2,7 +2,7 @@
   "name": "Ramadan Countdown",
   "short_name": "Ramadan Countdown",
   "description": "This website shows the remaining time till Ramadan",
-  "start_url": "https://ramadan-countdown.netlify.app/",
+  "start_url": "https://ramadan-countdown.netlify.app",
   "scope": "/",
   "orientation": "any",
   "icons": [
