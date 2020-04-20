@@ -102,7 +102,7 @@ body {
 }
 
 .container__shape:nth-child(1) {
-    transform: translate(25px, -46px) scale(.85);
+    transform: translate(25px, -50px) scale(.85);
 }
 
 .container__shape:nth-child(1) .container__shapeImg {
@@ -118,7 +118,7 @@ body {
 }
 
 .container__shape:nth-child(2) {
-    transform: translateY(0px) scale(1);
+    transform: translate(0px, -3px) scale(1);
 }
 
 .container__shape:nth-child(3) {
