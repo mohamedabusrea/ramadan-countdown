@@ -49,15 +49,7 @@ body {
     background: radial-gradient(closest-side, rgba(5, 119, 103, .85), rgba(3, 73, 73, .95));
 }
 
-.container--duringRamadan .container__textTo {
-    display: none;
-}
-
-.container--duringRamadan .container__textFrom {
-    display: inline-block;
-}
-
-.container__body {
+.container__content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -93,6 +85,14 @@ body {
     display: none;
 }
 
+.container--duringRamadan .container__textTo {
+    display: none;
+}
+
+.container--duringRamadan .container__textFrom {
+    display: inline-block;
+}
+
 .container__moon {
     z-index: 1;
 }
@@ -105,18 +105,6 @@ body {
     transform: translate(25px, -50px) scale(.85);
 }
 
-.container__shape:nth-child(1) .container__shapeImg {
-    animation-delay: .1s;
-}
-
-.container__shape:nth-child(2) .container__shapeImg {
-    animation-delay: .3s;
-}
-
-.container__shape:nth-child(3) .container__shapeImg {
-    animation-delay: .5s;
-}
-
 .container__shape:nth-child(2) {
     transform: translate(0px, -3px) scale(1);
 }
@@ -125,27 +113,9 @@ body {
     transform: translate(-20px, -60px) scale(.8);
 }
 
-.container__shapeImg {
-    animation: spin 1s alternate infinite ease-in-out;
-    animation-delay: .15s;
-    transform-origin: top;
-}
-
-.container__shapeImg:nth-of-type(2) {
-    animation-delay: .3s;
-}
-
-.container__shapeImg:nth-of-type(3) {
-    animation-delay: .5s;
-}
-
 .container__stars {
     position: absolute;
     display: flex;
-}
-
-.container__star {
-    animation: fade 1s infinite alternate ease-in-out;
 }
 
 .container__star:nth-child(1) {
@@ -177,24 +147,36 @@ body {
     animation-delay: .2s;
 }
 
-.container__star:nth-last-child(2) {
+.container__star:nth-child(7) {
     transform: translate(-40px, 30px) scale(.9);
     animation-delay: .5s;
 }
 
-.container__star:nth-last-child(1) {
+.container__star:nth-child(8) {
     transform: translate(0px, -10px);
     animation-delay: .1s;
 }
 
+.container__star {
+    animation: fade 1s infinite alternate ease-in-out;
+}
 
-@keyframes spin {
-    from {
-        transform: rotate(-3deg);
-    }
-    to {
-        transform: rotate(3deg);
-    }
+.container__shapeImg {
+    animation: spin 1s infinite alternate ease-in-out;
+    animation-delay: .15s;
+    transform-origin: top;
+}
+
+.container__shape:nth-child(1) .container__shapeImg {
+    animation-delay: .1s;
+}
+
+.container__shape:nth-child(2) .container__shapeImg {
+    animation-delay: .3s;
+}
+
+.container__shape:nth-child(3) .container__shapeImg {
+    animation-delay: .5s;
 }
 
 @keyframes fade {
@@ -203,5 +185,14 @@ body {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(-3deg);
+    }
+    to {
+        transform: rotate(3deg);
     }
 }
